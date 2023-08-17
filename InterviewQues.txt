@@ -66,9 +66,25 @@ All the Api related or backend related works should be done on Server component 
 
 10. What is the use of Client Component ?
 
--> It is rendered on the Client Side (Browser). We can use client component with "use client" directive. The UI related code and events should be written here.
+-> It is rendered on the Client Side (Browser). We can use client component with "use client" directive. The UI related code, events, states should be written here.
 
 
 11. When to use Server / Client Component ?
 
 -> For Heavy Data / SEO related stuffs use Server Component but for UI related such as buttons, searchbar use Client Component.
+
+
+12. Which Routing based is used in Nextjs ? 
+
+-> File System Based Routing is used in Nextjs. You have to create a folder named the name of the page then just create page.js.
+
+Ex: suppose we need a page named About Page so just create a folder inside app folder named "about" then create a page.js inside it and create a functional component inside and then just change the page to /about then see the magic
+
+
+13. What is Linking and Navigation ?
+
+-> When we use anchor tag or Link to move from one screen to another, it is known as Linking
+When we use button tag and use events to move from one screen to another, it is known as Navigation.
+
+
+
