@@ -1,0 +1,74 @@
+1. What is Next JS ? Does React code work with Nextjs ?
+
+-> Nextjs is a React Framework and it has features of React and has features of
+its own such as File based Routing, Server side Rendering, Static site Generation,
+etc and so React code will work with Nextjs.
+
+
+2. What is Component ?
+
+-> Piece of code that can be reused again and again (Function).
+
+
+3. How to pass data in Component ? 
+
+-> We can pass data in Component by passing the value as an argument to the
+desired component we will use the value inside, then we can use either props
+object or use normal destructuring. to receive the value as a prop we will use
+props.nameOfTheVariable inside curly braces {props.nameOfTheVariable} or
+{nameOfTheVariable} if we use destructuring.
+
+
+4. Difference between Javascript and Typescript ?
+
+-> Javascript does type conversion on runtime but in Typescript we have to specify the type of variables. Browser doesn't understands Typescript as first of all the code will be converted from Typescript to Javascript then the code will be readable.
+
+
+5. Server Side Scripting vs Client Side Scripting ?
+
+-> Client Side Scripting means the browser will do all the rendering of html css javascript and render it on user's screen
+
+Server Side Scripting means the server will do all the rendering of html,css and javascript and then send it to the browser to render it on user's screen.
+
+
+6. What is "use client" ?
+
+-> This is used to specify that the code is for client side not server side Rendering.
+
+
+7. What is package.json ?
+
+-> It is the most important file in our project as it contains all the information such as name of the project, commands used in the project and all the information about the libraries used in the project. It comes with NPM so that we can install our dependencies and to run commands.
+
+
+===================== Information about the File Structure =====================
+
+1. next.config.js -> It contains the configuration of Next JS Framework related
+
+2. jsconfig.json -> It contains the configuration of the JS 
+
+3. package-lock.json -> It contains the information about the dependencies of installed packages in our project
+
+4. layout.js -> It is the entry point of our js (First Component)
+
+===================================================================================
+
+8. Difference between dependencies and dev dependencies ?
+
+-> Dependencies is used for development mode and production mode but dev dependencies is used for production mode only.
+
+
+9. What is the use of Server Component ?
+
+-> It is rendered on the Server Side (Server). By default all the components are Server components. But we can convert to Client Component as well.
+All the Api related or backend related works should be done on Server component as it is more secured (security maintainance) and all this fetching data and logical part of backend is going on the server component only and this helps with speed of system or the SEO would be much better.
+
+
+10. What is the use of Client Component ?
+
+-> It is rendered on the Client Side (Browser). We can use client component with "use client" directive. The UI related code and events should be written here.
+
+
+11. When to use Server / Client Component ?
+
+-> For Heavy Data / SEO related stuffs use Server Component but for UI related such as buttons, searchbar use Client Component.
