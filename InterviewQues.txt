@@ -86,5 +86,47 @@ Ex: suppose we need a page named About Page so just create a folder inside app f
 -> When we use anchor tag or Link to move from one screen to another, it is known as Linking
 When we use button tag and use events to move from one screen to another, it is known as Navigation.
 
+Eg. use <Link href="path">Home<Link/> for linking one component to another (one page to another)
+Link can be imported from next/link
+
+for Navigation we can use useRouter() hook from next/navigation 
+
+Eg. -> 
+    const router = useRouter(); // just store the useRouter hook in a variable and now pass the path you want to visit
+    <button onClick = { () => router.push(path)}>Home</button>
+
+
+14. How to do Nested Routing ?
+
+->  We can do normal routing using the file routing feature but if we want to do nested routing just have a folder (suppose login folder) and then create a folder inside that folder (suppose teacher) and now just define page.js inside that created folder (teacher) and now define the routing (/login/teacher)
+
+Eg : we want to go to login page and inside that we want to go to the student page so we will do it like this
+login folder inside that we will create another folder named student and then define page.js inside student folder and boom if we mention this path <Link href="/login/student">Student Login</Link> we can visit that page voila !!.
+
+
+15. How to do Conditional Layout ?
+
+-> Just like in React, we can provide conditions and on basis of that condition we can show layout depending on the condition. 
+
+Eg : const [color,setColor] = useState("red");
+
+<button onClick = () => setColor("blue")></button>
+
+{
+    color === "red" ? <h1>Color is red</h1> : <h1>Color is blue</h1>
+}
+
+
+16. How to do Dynamic Routing ?
+
+-> Dynamic Routing is the ability to create routes for your web app that are generated dynamically based on the data provided and we can receive those data through params object
+
+Eg : We want to dynamically send the name of the students to the other page and receive those names and accordingly manage it depending on the value received
+
+First we create /studentlist page and inside that we define the name of students in <Link> and pass href={`/studentlist/${name}`} and now create a folder [student] and inside that define page.js where we will receive the dynamic data depending on the user input
+
+remo is clicked on the studentlist page so on the addressbar we will see /studentlist/remo and we will be on the student/remo page and now we can receive that value using {params} and just type params.foldername (params.student) easy
+
+
 
 
