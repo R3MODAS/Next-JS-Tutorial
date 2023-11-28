@@ -1,0 +1,27 @@
+Pre-rendering
+==============
+Next js pre-renders the HTML of each page in advance instead of all the work done by client-side Javascript. It results in better page performance and SEO.
+
+ First Generated HTML             Page is Loaded
+-----------------------      --------------------------
+HTML (Minimal JS code)   =>  Js code for the page loads and page
+                             becomes fully interactive. (Adding Event and stuffs)
+
+This process is known as hydration.
+                
+Content Delivery Network (CDN)
+==============================
+It is a network of servers linked together with a goal of delivering content as quickly and securely as possible. Our sites can be cached onto these server and can be provided quickly to the user.
+
+Pages and Layout in Nextjs
+===========================
+To navigate to different page, first create a folder with the name of the page (about)then inside that create page.tsx which is the index file for the (About Page).
+
+Now on the searchbar of the browser type http:localhost:3000/about and voila! 
+You are now on the About Page thanks to File based Routing support in Next.js.
+
+so the page.tsx is the index file for any page and now about the layout.tsx file. 
+inside the layout file we can see the html head and all and we can see it is wrapping all the children (all the pages/component we make) so here we can put Navbar component and it will be available for all the pages/routes we go.
+
+Now we want to apply something that is only for a specific page and not for every page so to do that we can create layout.tsx file inside the folder of the page (About page / Contact page) then just define the Navbar and then the children meaning all the content of the about page will come after the Navbar.
+
