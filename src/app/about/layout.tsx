@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/Header'
 
 export default function RootLayout({
     children,
@@ -7,13 +8,7 @@ export default function RootLayout({
 }) {
     return (
         <>
-            <nav className='bg-purple-800 h-20 flex items-center'>
-                <ul className='flex items-center gap-10'>
-                    <li className='cursor-pointer'>Home</li>
-                    <li className='cursor-pointer'>About</li>
-                    <li className='cursor-pointer'>Contact</li>
-                </ul>
-            </nav>
+            <Header />
             {children}
         </>
     )
